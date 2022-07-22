@@ -1,0 +1,107 @@
+---
+id: pod-objects
+title: Pod Objects
+sidebar_position: 1
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+##### Fetch pod object data, manage memberships and admin roles through the Orca SDK.
+
+## Importing Types
+
+Pod and Proposal are the two types available in our SDK. Types can be imported with the following:
+
+```js
+import { Pod, Proposal } from '@orcaprotocol/orca-sdk';
+```
+
+## Pod
+### Fetching pods
+Once you init the SDK, you can call `getPod()`, `getUserPods()`, or `getAdminPods()` anywhere to fetch Pod objects.
+
+Using these functions can help you present and organize your application accordingly to pod and pod member structures of connected users.
+
+<Tabs
+  defaultValue="query"
+  values={[
+    { label: 'Query', value: 'query', },
+    { label: 'Response', value: 'response', }
+  ]
+}>
+<TabItem value="query">
+
+```js
+import { getPod, getUserPods, getAdminPods } from '@orcaprotocol/orca-sdk';
+
+// ENS names also work for the below.
+const podFromEnsName = await getPod('mypod.pod.xyz');
+const podFromAddress = await getPod('0x123...456');
+const podFromId = await getPod(1);
+// Returns null
+const notAPod = await getPod('not a pod');
+
+// Fetches all Pods that a user is a member of
+const userPods = await getUserPods(userAddress);
+
+// Fetches all Pods that a user is an admin of
+const adminPods = await getAdminPods(adminAddress);
+```
+
+</TabItem>
+<TabItem value="response">
+
+```js
+const {
+  id, // Pod ID
+  safe, // Gnosis safe address, aka the Pod address
+  ensName, // E.g., orcanauts.pod.xyz
+  admin, // Address of pod admin
+  imageUrl, // Source of NFT image
+  imageNoTextUrl, // Source of NFT image without text (used for avatars)
+} = await getPod();
+```
+</TabItem>
+</Tabs>
+
+### Fetching members, EOAs, subpods and super pods
+
+Members, EOAs, sub pods and super pods can be fetched with the following functions:
+
+<Tabs
+  defaultValue="query"
+  values={[
+    { label: 'Query', value: 'query', },
+    { label: 'Response', value: 'response', }
+  ]
+}>
+<TabItem value="query">
+
+```js
+const pod = await getPod(podAddress);
+// Fetches list of all members from the pod, as an array of Ethereum addresses.
+// This includes any pods that may be members of the original pods.
+const members = await pod.getMembers();
+
+// Fetches any member EOAs (externally owned accounts). That is, any member that is not a smart contract or pod.
+const memberEOAs = await pod.getMemberEOAs();
+
+// Fetches Pod objects for any sub pods of a given pod
+const memberPods = await pod.getMemberPods();
+
+// For a given pod, fetches all sub pods a given user is a part of
+const subPodsOfMember = await pod.getSubPodsByMember(userAddress);
+
+// Fetch the super pod of a given pod, if relevant. 
+const superPods = await pod.getSuperPods();
+```
+</TabItem>
+
+<TabItem value="response">
+
+```js
+const hello = await getpod(pod);
+```
+</TabItem>
+</Tabs>

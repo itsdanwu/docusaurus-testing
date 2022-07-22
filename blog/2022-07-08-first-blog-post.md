@@ -1,5 +1,5 @@
 ---
-slug: 2022-07-21-first-changelog-post
+slug: 2022-07-08-first-changelog-post
 title: Jun 21, 2022
 authors: [danwu, jtlacci]
 tags: [changelog, product]
