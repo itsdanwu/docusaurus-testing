@@ -34,12 +34,14 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          sidebarCollapsed: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
+          routeBasePath: 'changelog',
           blogSidebarTitle: 'Changelog',
           blogSidebarCount: 'ALL',
           showReadingTime: true,
@@ -72,7 +74,7 @@ const config = {
           },
           {to: '/docs/smart-contracts/orca-contracts', label: 'Contracts', position: 'left'},
           {to: '/docs/sdk/sdk-overview', label: 'SDK', position: 'left'},
-          {to: '/blog', label: 'Changelog', position: 'left'},
+          {to: '/changelog', label: 'Changelog', position: 'left'},
           {
             href: 'https://github.com/orcaprotocol/',
             label: 'GitHub',
@@ -110,7 +112,7 @@ const config = {
             items: [
               {
                 label: 'Changelog',
-                to: '/blog',
+                to: '/changelog',
               },
               {
                 label: 'GitHub',
