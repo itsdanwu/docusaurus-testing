@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Welcome to Orca Protocol',
+  tagline: 'The people first primitive',
   url: 'https://itsdanwu.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
