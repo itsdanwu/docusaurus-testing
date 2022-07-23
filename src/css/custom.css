@@ -36,9 +36,10 @@
 }
 
 article {
-  max-width: 750px;
+  max-width: 775px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 10px;
 }
 
 article header h1 {
