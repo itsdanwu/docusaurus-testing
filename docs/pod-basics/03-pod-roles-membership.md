@@ -2,6 +2,9 @@
 id: pod-roles-and-memberhsip
 title: Pod Roles and Membership
 ---
+##### Defining roles and membership structures of pods.
+---
+
 
 Two of the most important concepts of Orca Protocol are:
 

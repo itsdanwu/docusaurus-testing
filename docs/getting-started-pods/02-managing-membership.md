@@ -4,6 +4,8 @@ title: Managing Membership
 ---
 
 ##### How to manage memberships for your pod.
+---
+
 
 There are a few ways in which membership can be managed for a pod:
 

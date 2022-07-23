@@ -5,6 +5,9 @@ title: Benefits Of Pods
 
 ##### The benefits of using pods.
 
+---
+
+
 Teams, DAOs, and organizations become the beneficiaries of using pods through:
 
 - **Increased transparency and visibility**: Pods more clearly identify the nuclei of activity that exist within DAO ecosystems. By creating a more public identity (pod ENS name, pod NFT image, and dedicated pod URL) around working groups, DAO contributors, community members, and partners have better insight into the network of people and working units in your ecosystem. 
