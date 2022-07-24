@@ -21,12 +21,82 @@
   --ifm-font-size-base: 16px; /* increase base font from 16 to 18px */
   
   /* override defaults to look like web app */
-  /*--ifm-background-color: #f3ebfc;
+  /*--ifm-background-color: #f3ebfc; */
   --ifm-navbar-background-color: #7c1cfc;
-  --ifm-navbar-link-color: white; */
+  --ifm-navbar-link-color: white;
+  --ifm-navbar-item-padding-horizontal: 15px;
+  --ifm-navbar-item-margin-horizontal: 15px;
+  --ifm-navbar-item-padding-vertical: 5px;
+
+
+  /*--ifm-menu-color: white;*/
+  --ifm-menu--active-color: white;
+  --ifm-menu-color-background-active: white;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/*CSS for desktop version*/
+.navbar__link--active {
+  background-color: white;
+  color: #7c1cfc;
+  border-radius: 20px;
+}
+
+.navbar__link:hover {
+  background-color: #5e19c5;
+  border-radius: 20px;
+  color: white;
+}
+/*END css for Desktop version*/
+
+/*custom CSS for tablet/mobile views of menu*/
+@media screen and (max-width: 996px) {
+  .navbar__link--active {
+    background-color: white;
+    color: #7c1cfc;
+    border-radius: 20px;
+  }
+
+  .navbar__link:hover {
+    font-size: 1.05rem;
+  }
+
+  .menu__link {
+    border-radius: 20px;
+    color: white;
+  }
+
+  .menu__link:hover {
+    color: white;
+  }
+
+  .menu__link--active {
+    color: #7c1cfc;
+    border-radius: 20px;
+  }
+
+  .menu__list-item-collapsible .menu__link {
+    color: white;
+  }
+
+  .menu__list-item-collapsible .menu__link--active  {
+    border-radius: 20px;
+    color: white;
+  }
+
+  .menu__list-item-collapsible .menu__link:hover {
+            color: white;
+            background: none !important;
+          }
+
+  .menu__list-item-collapsible--active {
+    background-color: white;
+    color: #7c1cfc;
+    border-radius: 20px;
+  } 
+}
+
+/* dark mode currently DISABLED in docusaurus.config.js file
+For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #dbc8f8;
   --ifm-color-primary-dark: #c1a0f3;
