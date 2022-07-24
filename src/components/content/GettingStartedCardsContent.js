@@ -7,7 +7,7 @@ export const gettingStartedContent = [
     },
     {
       docNumber: '02',
-      docTitle: 'Pod Structures For Your DAO →',
+      docTitle: 'Onboard Your DAO →',
       docSubtopic: 'ONBOARD',
       docLink: '/docs/guides/pod-guides-overview',
     },

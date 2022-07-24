@@ -1,11 +1,11 @@
 import React from 'react'
 import './styles.css'
-import { podarchyGuideCardsContent } from './content/PodarchyGuidesCardsContent'
+import { podarchyGuidesCardsContent } from './content/PodarchyGuidesCardsContent'
 
-export const ToolsCards = () => {
+export const PodarchyGuidesCards = () => {
   return (
     <div className={'tools-container'}>
-      {podarchyGuideCardsContent.map((card, index) => (
+      {podarchyGuidesCardsContent.map((card, index) => (
         <div className={'tools-card'} key={index}>
           <a href={card.toolsLink}>
             <div className={'tools-title-flexbox'}>

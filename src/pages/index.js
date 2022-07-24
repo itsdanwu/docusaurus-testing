@@ -41,42 +41,24 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import { GettingStartedCards } from '../components/GettingStartedCards';
+import { PodarchyGuidesCards } from '../components/PodarchyGuidesCards';
 import styles from './index.module.css';
-
+import HeroBannerLogo from '../../static/img/heroBannerLogo.svg'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <HeroBannerLogo className={styles.logoText} />
       </div>
     </header>
   );
 }
-
-/**Original button components
- 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Get started
-          </Link>
-        </div> 
-      </div>
-    </header>
-  );
-}
-*/
+/*
+Bring these back into HomepageHeader above if we want text
+<h1 className="hero__title">{siteConfig.title}</h1>
+<p className="hero__subtitle">{siteConfig.tagline}</p>*/
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
@@ -90,9 +72,16 @@ export default function Home() {
           <div className={styles.gettingStartedFlexBox}>
             <p className={styles.gettingStarted}>Getting started</p>
           </div>
-        </div>
+      </div>
           <GettingStartedCards />
-        <HomepageFeatures />
+          <div className={styles.layoutFlexBox}>
+          <div className={styles.gettingStartedFlexBox}>
+          <p className={styles.gettingStarted}>Pod Onboarding Guides</p>
+          </div>
+
+          <PodarchyGuidesCards />
+      </div>    
+          <HomepageFeatures />
       </main>
     </Layout>
   );

@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Orca Protocol',
-  tagline: 'The people first primitive',
+  //tagline: 'The people first primitive',
   url: 'https://itsdanwu.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -60,6 +60,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+      },
       navbar: {
         logo: {
           alt: 'Orca Logo',

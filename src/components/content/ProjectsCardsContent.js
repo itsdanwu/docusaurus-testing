@@ -11,4 +11,4 @@ export const projectsContent = [
     link: 'https://punks.house/',
   },
 ]
-Footer
+/*Footer*/
