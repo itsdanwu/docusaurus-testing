@@ -76,12 +76,11 @@ export default function Home() {
           <GettingStartedCards />
           <div className={styles.layoutFlexBox}>
           <div className={styles.gettingStartedFlexBox}>
-          <p className={styles.gettingStarted}>Pod Onboarding Guides</p>
+          <p className={styles.gettingStarted}>Pod Blueprints</p>
           </div>
 
           <PodarchyGuidesCards />
       </div>    
-          <HomepageFeatures />
       </main>
     </Layout>
   );

@@ -21,19 +21,15 @@ Source code for all Orca Protocol contracts can be found in this [GitHub reposit
 ##### Ethereum - 1
 | **Contract**            | **Address**                                |
 | ------------            | ------------------------------------------ |
-| MemberToken              | 0x0000000000000000000000000000000000000000  |
-| ControllerV1            | 0x0000000000000000000000000000000000000000  |
-| RuleManager             | 0x0000000000000000000000000000000000000000  |
-| SafeTeller              | 0x0000000000000000000000000000000000000000  |
+| MemberToken              | 0x0762aa185b6ed2dca77945ebe92de705e0c37ae3 |
+| ControllerV1.3            | 0xDE69E7C2184599093a9E0Bbc5923fa462fdf0302  |
 
 ### Testnet Deployments
 ##### Rinkeby - 4
 | **Contract**            | **Address**                                |
 | ------------            | ------------------------------------------ |
-| MemberToken              | 0x0000000000000000000000000000000000000000  |
-| ControllerV1             | 0x0000000000000000000000000000000000000000  |
-| RuleManager             | 0x0000000000000000000000000000000000000000  |
-| SafeTeller              | 0x0000000000000000000000000000000000000000  |
+| MemberToken              | 0x8DC995523c9c1C6180c50d0CE0733621E63ef8E1  |
+| ControllerV1.3             | 0x99a184725B2C12E5C8FBc1E3f680a5aDB3d07160  |
 
 ## Getting Started
 
@@ -128,10 +124,13 @@ When the `MemberToken` calls the `beforeTokenTransfer` function, the `Controller
 
 If the event is permissible the `Controller` will call the `SafeTeller` to handle the side effects of the membership change.
 
+<!---  Commenting out as these are not accessible by public
+
 ### RuleManager
 
 The `RuleManager` manages the rules for multiple pods, each rule is an arbitrary transaction that returns `true` or `false` based on a member's compliance at transfer time
 
 ### SafeTeller
 
-The `SafeTeller` manages the side effects for multiple pods, before a valid token transfer the `SafeTeller` will perform owner updates to the pod's safe
+The `SafeTeller` manages the side effects for multiple pods, before a valid token transfer the `SafeTeller` will perform owner updates to the pod's safe 
+-->

@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -76,10 +76,10 @@ const config = {
             position: 'left',
             label: 'Overview',
           },
-          {to: '/docs/smart-contracts/orca-contracts', label: 'Contracts', position: 'left'},
           {to: '/docs/sdk/sdk-overview', label: 'SDK', position: 'left'},
+          {to: '/docs/smart-contracts/orca-contracts', label: 'Contracts', position: 'left'},
           {to: '/changelog', label: 'Changelog', position: 'left'},
-          {to: '/docs/guides/pod-guides-overview/', label:'Pod Onboarding Guides', position: 'right'},
+          {to: '/docs/guides/pod-guides-overview/', label:'Pod Blueprints', position: 'right'},
           {
             href: 'https://github.com/orcaprotocol/',
             label: 'GitHub',
