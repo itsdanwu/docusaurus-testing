@@ -69,7 +69,7 @@ const {
 
 ### Fetching members, EOAs, subpods and super pods
 
-Members, EOAs, sub pods and super pods can be fetched with the following functions:
+Members, EOAs, subpods and super pods can be fetched with the following functions:
 
 <Tabs
   defaultValue="query"
@@ -89,10 +89,10 @@ const members = await pod.getMembers();
 // Fetches any member EOAs (externally owned accounts). That is, any member that is not a smart contract or pod.
 const memberEOAs = await pod.getMemberEOAs();
 
-// Fetches Pod objects for any sub pods of a given pod
+// Fetches Pod objects for any subpods of a given pod
 const memberPods = await pod.getMemberPods();
 
-// For a given pod, fetches all sub pods a given user is a part of
+// For a given pod, fetches all subpods a given user is a part of
 const subPodsOfMember = await pod.getSubPodsByMember(userAddress);
 
 // Fetch the super pod of a given pod, if relevant. 

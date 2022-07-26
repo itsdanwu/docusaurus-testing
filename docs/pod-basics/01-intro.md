@@ -8,10 +8,14 @@ title: What Are Pods?
 ---
 
 
-## Pod Overview
+## Overview
 
 Conceptually, a pod formalizes the individual identities and relationships between small groups of people into a distinct group or committee, often-times based on expertise or project.
-Technically, a pod uses a lightweight permissions layer around a Gnosis Safe multi-sig wallet to create more flexible and composable working units. 
+
+## Gnosis Safe
+Underneath the lightweight permissions layer of an Orca Protocol pod lives a [Gnosis Safe multi-sig wallet](https://gnosis-safe.io/). The Gnosis Safe can be leveraged by the pod to store and manage all of the digital assets they may need to payout service providers, contributors, grants, etc. 
+
+When pod members are added to or removed from the pod, they are also being added and removed from the underlying Gnosis Safe.
 
 ## Pod Membership NFTs
 A traditional multi-sig wallet is like the lock to your house; it is cut to specific keys that control access. In order to change the keys, you need to change the lock. 

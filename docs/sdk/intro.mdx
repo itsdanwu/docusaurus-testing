@@ -14,22 +14,15 @@ import TabItem from '@theme/TabItem';
 At a high level, the Orca SDK allows developers to:
 * Fetch and determine if addresses are pods
 * Fetch pod metadata
-* Fetch pod member data, including sub pods. 
+* Fetch pod member data, including subpods. 
 * Determine roles of pod members
 * Mint and burn pod membership, either directly acting as an admin or through a proposal. 
 
-If you prefer, you can view auto-generated docs of our complete SDK here.
+If you prefer, you can view auto-generated docs of our [complete SDK here](https://orcaprotocol.github.io/orca-sdk/).
+
+## Initialize the SDK
 
 To begin, initialize the SDK with the init function:
-
-<Tabs
-  defaultValue="query"
-  values={[
-    { label: 'Query', value: 'query', },
-    { label: 'Response', value: 'response', }
-  ]
-}>
-<TabItem value="query">
 
 ```js
 import { init } from '@orcaprotocol/orca-sdk';
@@ -39,14 +32,3 @@ import { init } from '@orcaprotocol/orca-sdk';
 // Make sure that the provider is instantiated before the SDK
 init({ provider: ethers.getDefaultProvider(), network: 1 });
 ```
-
-</TabItem>
-<TabItem value="response">
-
-```json
-{
-  
-}
-```
-</TabItem>
-</Tabs>
