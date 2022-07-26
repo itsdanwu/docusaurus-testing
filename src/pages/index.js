@@ -58,7 +58,17 @@ function HomepageHeader() {
 /*
 Bring these back into HomepageHeader above if we want text
 <h1 className="hero__title">{siteConfig.title}</h1>
-<p className="hero__subtitle">{siteConfig.tagline}</p>*/
+<p className="hero__subtitle">{siteConfig.tagline}</p>
+
+
+These are pod blueprint cards we can add to homepage. Insert below <GettingStartedCards /> below
+          <div className={styles.layoutFlexBox}>
+            <div className={styles.gettingStartedFlexBox}>
+              <p className={styles.gettingStarted}>Pod Blueprints</p>
+            </div>
+          </div>   
+          <PodarchyGuidesCards />
+*/
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
@@ -74,13 +84,9 @@ export default function Home() {
           </div>
       </div>
           <GettingStartedCards />
-          <div className={styles.layoutFlexBox}>
-          <div className={styles.gettingStartedFlexBox}>
-          <p className={styles.gettingStarted}>Pod Blueprints</p>
-          </div>
 
-          <PodarchyGuidesCards />
-      </div>    
+
+ 
       </main>
     </Layout>
   );

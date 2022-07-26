@@ -79,7 +79,7 @@ const config = {
           {to: '/docs/sdk/sdk-overview', label: 'SDK', position: 'left'},
           {to: '/docs/smart-contracts/orca-contracts', label: 'Contracts', position: 'left'},
           {to: '/changelog', label: 'Changelog', position: 'left'},
-          {to: '/docs/guides/pod-guides-overview/', label:'Pod Blueprints', position: 'right'},
+/**       {to: '/docs/guides/pod-blueprints/', label:'Pod Blueprints', position: 'right'}, */ 
           {
             href: 'https://github.com/orcaprotocol/',
             label: 'GitHub',

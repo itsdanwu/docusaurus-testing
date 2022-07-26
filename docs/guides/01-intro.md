@@ -1,5 +1,5 @@
 ---
-id: pod-guides-overview
+id: pod-blueprints
 title: Overview
 ---
 
