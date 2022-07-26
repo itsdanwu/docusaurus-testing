@@ -5,13 +5,18 @@ authors: [danwu, jtlacci]
 tags: [changelog, product]
 ---
 
-Today we released a new version of our podarchy!
-
 ![New Podarchy](./new-podarchy.png)
 
+## Podarchy UI Updates
+Today we released some new UI updates to our [podarchy view](https://pod.xyz/podarchy/orcanauts).
 
 <!--truncate-->
 
-Donec sed dapibus quam. Nam eleifend rhoncus dolor, in faucibus ex malesuada non. In sit amet mollis tortor, sit amet accumsan tellus. Suspendisse potenti. Aenean ut risus et nulla finibus porttitor. Nunc et nisi lectus. Suspendisse viverra metus leo, id euismod ante commodo rhoncus.
+Orca Pods make it easy to map your DAO’s architecture through our Podarchy UI. Podarchies visualize the various relationships between each group within a DAO, including membership and privileges.
 
-Aliquam interdum purus eget quam feugiat faucibus. Nulla et porttitor neque, et sodales ipsum. Donec facilisis, nibh tristique ultrices lacinia, risus quam laoreet justo, vitae semper est nisi eget orci. Fusce eget luctus ex, ut volutpat risus. In sed diam feugiat, tempus augue eget, rhoncus elit. Nam et est quis urna tempus fringilla quis ac arcu. Quisque viverra justo nec mollis dapibus. Donec hendrerit, dui et imperdiet finibus, ante turpis pellentesque nisi, in bibendum nulla ante ac velit.
+Transparency is the first step towards accountability.
+
+## Fixes and improvements
+
+- Pod NFTs were stretching based on user lists in non-member view
+- User bio card Twitter follower count bug

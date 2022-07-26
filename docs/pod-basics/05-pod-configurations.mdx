@@ -1,0 +1,47 @@
+---
+id: pod-configurations
+title: Pod Configurations
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<!-- Import pod configuration images -->
+import dictator from '@site/docs/pod-basics/img/dictator.png'
+import tokenRepublic from '@site/docs/pod-basics/img/token-republic.png'
+import roundTable from '@site/docs/pod-basics/img/round-table.png'
+import highCouncil from '@site/docs/pod-basics/img/high-council.png'
+import embeddedAdmins from '@site/docs/pod-basics/img/embedded-admins.png'
+
+##### Various configurations available for pods.
+---
+
+Pods can be constructed in a number of different ways in order to serve the needs of your team and organization.
+
+<Tabs
+  defaultValue="the-dictator"
+  values={[
+    { label: 'The Dictator', value: 'the-dictator'},
+    { label: 'Token Republic', value: 'token-republic'},
+    { label: 'Round Table', value: 'round-table'},
+    { label: 'High Council', value: 'high-council'},
+    { label: 'Embedded Admins', value: 'embedded-admins'}    
+  ]}>
+
+  <TabItem value="the-dictator">
+   <img src={dictator} />
+  </TabItem>
+  <TabItem value="token-republic">
+   <img src={tokenRepublic} />
+  </TabItem>
+  <TabItem value="round-table">
+   <img src={roundTable} />
+  </TabItem>
+  <TabItem value="high-council">
+   <img src={highCouncil} />
+  </TabItem>
+  <TabItem value="embedded-admins">
+   <img src={embeddedAdmins} />
+  </TabItem>
+
+</Tabs>
