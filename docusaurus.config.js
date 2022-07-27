@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Orca Protocol',
   //tagline: 'The people first primitive',
-  url: 'https://itsdanwu.github.io',
+  url: 'https://docs.orcaprotocol.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
