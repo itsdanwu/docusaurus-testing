@@ -67,18 +67,29 @@ const {
 </TabItem>
 </Tabs>
 
+### Check roles and memberships
+For a given pod, you can check if a certain given user is an admin, admin pod member, or subpod member.
+
+```js
+const pod = await getPod(podAddress);
+
+// Checks if user is admin of pod
+const isAdminBoolean = await pod.isAdmin('0x123...456');
+
+// Checks if user is member of an admin pod (if exists) for a given pod
+const isAdminPodMemberBoolean = await pod.isAdminPodMember('0x123...456');
+
+// Checks if user is member of pod
+const isMemberBoolean = await pod.isMember('0x123...456');
+
+// Checks if user is a member of a subpod. Returns false if the user is a member of this pod, but not any subpods.
+const isSubPodMemberBoolean = await pod.isSubPodMember('0x123...456');
+```
+
 ### Fetching members, EOAs, subpods and super pods
 
-Members, EOAs, subpods and super pods can be fetched with the following functions:
+Once you have a given pod, you can fetch members, EOAs, subpods and superpods with the following functions:
 
-<Tabs
-  defaultValue="query"
-  values={[
-    { label: 'Query', value: 'query', },
-    { label: 'Response', value: 'response', }
-  ]
-}>
-<TabItem value="query">
 
 ```js
 const pod = await getPod(podAddress);
@@ -98,12 +109,3 @@ const subPodsOfMember = await pod.getSubPodsByMember(userAddress);
 // Fetch the super pod of a given pod, if relevant. 
 const superPods = await pod.getSuperPods();
 ```
-</TabItem>
-
-<TabItem value="response">
-
-```js
-const hello = await getpod(pod);
-```
-</TabItem>
-</Tabs>
