@@ -1,6 +1,6 @@
 ---
-slug: 2022-07-22-new-podarchy
-title: Jul 22, 2022
+slug: 2022-07-18-new-podarchy
+title: Jul 18, 2022
 authors: [danwu, jtlacci]
 tags: [changelog, product]
 ---
