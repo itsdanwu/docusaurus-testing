@@ -7,9 +7,9 @@ export const gettingStartedContent = [
     },
     {
       docNumber: '02',
-      docTitle: 'Onboard Your DAO →',
-      docSubtopic: 'ONBOARD',
-      docLink: 'https://pod.xyz',
+      docTitle: 'Pod Configurations →',
+      docSubtopic: 'SETUP',
+      docLink: '/docs/pod-basics/pod-configurations',
     },
     {
       docNumber: '03',
