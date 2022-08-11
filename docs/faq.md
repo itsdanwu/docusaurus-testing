@@ -37,4 +37,4 @@ Yes! What's the point of being productive, if you can't do it in style? Pods can
 Pod admins manage memberships and membership requirements.
 
 ## Are Orca Protocol's smart contracts audited?
-Yes! Orca Protocol's smart contracts responsible for pod creation and membership management were audited three times during the summer and fall of 2021 by Consensys Dilligence, Quantstamp, and the internal auditor at Gnosis Safe. If you would like to see the final reports please reach out to the team on Discord.
+Yes! Orca Protocol's smart contracts responsible for pod creation and membership management were audited three times during the summer and fall of 2021 by Consensys Dilligence, Quantstamp, and the internal auditor at Gnosis Safe. Audits are underway for 2022 as of August. If you would like to see the final reports please reach out to the team on Discord.
