@@ -8,13 +8,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,300&display=swap');
 
 :root {
-  --ifm-color-primary: #791fff;
-  --ifm-color-primary-dark: #6802ff;
-  --ifm-color-primary-darker: #6200f3;
-  --ifm-color-primary-darkest: #5000c8;
-  --ifm-color-primary-light: #8a3cff;
-  --ifm-color-primary-lighter: #934aff;
-  --ifm-color-primary-lightest: #ac75ff;
+  --ifm-color-primary: #4535d8;
+  --ifm-color-primary-dark: #3727cb;
+  --ifm-color-primary-darker: #3425c0;
+  --ifm-color-primary-darkest: #2b1e9e;
+  --ifm-color-primary-light: #5a4cdc;
+  --ifm-color-primary-lighter: #6457df;
+  --ifm-color-primary-lightest: #8379e5;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: 'Poppins';
@@ -22,29 +22,29 @@
   
   /* override defaults to look like web app */
   /*--ifm-background-color: #f3ebfc; */
-  --ifm-navbar-background-color: #7c1cfc;
-  --ifm-navbar-link-color: white;
+  --ifm-navbar-background-color: #EAEFF5;
+  --ifm-navbar-link-color: #140C06;
   --ifm-navbar-item-padding-horizontal: 15px;
   --ifm-navbar-item-margin-horizontal: 15px;
   --ifm-navbar-item-padding-vertical: 5px;
 
 
   /*--ifm-menu-color: white;*/
-  --ifm-menu--active-color: white;
-  --ifm-menu-color-background-active: white;
+  --ifm-menu--active-color: #EAEFF5;
+  --ifm-menu-color-background-active: #EAEFF5;
 }
 
 /*CSS for desktop version*/
 .navbar__link--active {
-  background-color: white;
-  color: #7c1cfc;
+  background-color: #EAEFF5;
+  color: #4535d8;
   border-radius: 20px;
 }
 
 .navbar__link:hover {
-  background-color: #5e19c5;
+  background-color: white;
   border-radius: 20px;
-  color: white;
+  color: #4535d8;
 }
 /*END css for Desktop version*/
 
@@ -52,7 +52,7 @@
 @media screen and (max-width: 996px) {
   .navbar__link--active {
     background-color: white;
-    color: #7c1cfc;
+    color: #140C06;
     border-radius: 20px;
   }
 
@@ -62,35 +62,35 @@
 
   .menu__link {
     border-radius: 20px;
-    color: white;
+    color: #140C06;
   }
 
   .menu__link:hover {
-    color: white;
+    color: #4535d8;
   }
 
   .menu__link--active {
-    color: #7c1cfc;
+    color: #4535d8;
     border-radius: 20px;
   }
 
   .menu__list-item-collapsible .menu__link {
-    color: white;
+    color: #140C06;
   }
 
   .menu__list-item-collapsible .menu__link--active  {
     border-radius: 20px;
-    color: white;
+    color: #140C06;
   }
 
   .menu__list-item-collapsible .menu__link:hover {
-            color: white;
+            color: #140C06;
             background: none !important;
           }
 
   .menu__list-item-collapsible--active {
-    background-color: white;
-    color: #7c1cfc;
+    background-color: #140C06;
+    color: #4535d8;
     border-radius: 20px;
   } 
 }
