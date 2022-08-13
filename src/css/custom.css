@@ -5,7 +5,9 @@
  */
 
 /* You can override the default Infima variables here. */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,300&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
 
 :root {
   --ifm-color-primary: #4535d8;
@@ -17,7 +19,8 @@
   --ifm-color-primary-lightest: #8379e5;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-family-base: 'Poppins';
+  --ifm-font-family-base: 'Inter';
+  --ifm-heading-font-family: 'Poppins';
   --ifm-font-size-base: 16px; /* increase base font from 16 to 18px */
   
   /* override defaults to look like web app */
