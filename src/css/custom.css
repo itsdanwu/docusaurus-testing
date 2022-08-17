@@ -25,38 +25,37 @@
   
   /* override defaults to look like web app */
   /*--ifm-background-color: #f3ebfc; */
-  --ifm-navbar-background-color: #EAEFF5;
   --ifm-navbar-link-color: #140C06;
   --ifm-navbar-item-padding-horizontal: 15px;
   --ifm-navbar-item-margin-horizontal: 15px;
   --ifm-navbar-item-padding-vertical: 5px;
+  --ifm-menu-color: #140C06;
+  --ifm-menu-color-background-active: white;
+  --ifm-breadcrumb-item-background-active: white;
 
 
   /*--ifm-menu-color: white;*/
-  --ifm-menu--active-color: #EAEFF5;
-  --ifm-menu-color-background-active: #EAEFF5;
+  --ifm-menu--active-color: #4535d8;
 }
 
 /*CSS for desktop version*/
 .navbar__link--active {
-  background-color: #EAEFF5;
   color: #4535d8;
-  border-radius: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
 }
 
 .navbar__link:hover {
-  background-color: white;
-  border-radius: 20px;
   color: #4535d8;
 }
+
 /*END css for Desktop version*/
 
 /*custom CSS for tablet/mobile views of menu*/
 @media screen and (max-width: 996px) {
   .navbar__link--active {
-    background-color: white;
     color: #140C06;
-    border-radius: 20px;
   }
 
   .navbar__link:hover {
@@ -64,7 +63,6 @@
   }
 
   .menu__link {
-    border-radius: 20px;
     color: #140C06;
   }
 
@@ -74,7 +72,9 @@
 
   .menu__link--active {
     color: #4535d8;
-    border-radius: 20px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
   }
 
   .menu__list-item-collapsible .menu__link {
@@ -82,8 +82,10 @@
   }
 
   .menu__list-item-collapsible .menu__link--active  {
-    border-radius: 20px;
-    color: #140C06;
+    color: #4535d8;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
   }
 
   .menu__list-item-collapsible .menu__link:hover {
@@ -92,9 +94,9 @@
           }
 
   .menu__list-item-collapsible--active {
-    background-color: #140C06;
+
     color: #4535d8;
-    border-radius: 20px;
+
   } 
 }
 
