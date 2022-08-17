@@ -31,6 +31,7 @@
   --ifm-navbar-item-padding-vertical: 5px;
   --ifm-menu-color: #140C06;
   --ifm-menu-color-background-active: white;
+  --ifm-menu-color-background-hover: white;
   --ifm-breadcrumb-item-background-active: white;
 
 
@@ -39,6 +40,11 @@
 }
 
 /*CSS for desktop version*/
+
+.navbar__link:hover {
+  color: #4535d8;
+}
+
 .navbar__link--active {
   color: #4535d8;
   text-decoration: underline;
@@ -46,9 +52,13 @@
   text-underline-position: under;
 }
 
-.navbar__link:hover {
+.navbar__link--active:hover {
   color: #4535d8;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
 }
+
 
 /*END css for Desktop version*/
 
@@ -68,13 +78,15 @@
 
   .menu__link:hover {
     color: #4535d8;
+    background: white;
   }
 
   .menu__link--active {
     color: #4535d8;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-position: under;
+  }
+
+  .menu__link--active:hover {
+    color: #4535d8;
   }
 
   .menu__list-item-collapsible .menu__link {
@@ -83,20 +95,15 @@
 
   .menu__list-item-collapsible .menu__link--active  {
     color: #4535d8;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-position: under;
   }
 
   .menu__list-item-collapsible .menu__link:hover {
-            color: #140C06;
-            background: none !important;
+            color: #4535d8;
+            background: white;
           }
 
   .menu__list-item-collapsible--active {
-
     color: #4535d8;
-
   } 
 }
 
