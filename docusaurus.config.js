@@ -65,6 +65,14 @@ const config = {
         defaultMode: 'light',
         disableSwitch: true,
       },
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'Welcome to Metropolis! Click to see if you <a target="_blank" rel="noopener noreferrer" href="https://airdrop-nu.vercel.app/">qualified for our airdrop </a>',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: true,
+      },
       navbar: {
         logo: {
           alt: 'Metropolis Logo',
