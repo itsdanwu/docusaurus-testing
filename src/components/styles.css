@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: column;
   padding: 25px;
-  background: #cfcfcf00;
-  border: 2px solid #C4BFF2;
+  background: #FBFCFE;
+  border: 2px solid #EBEAFB;
   border-radius: 15px;
   transition: 300ms ease-out;
 }

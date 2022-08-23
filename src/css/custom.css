@@ -29,18 +29,27 @@
   --ifm-navbar-item-padding-horizontal: 15px;
   --ifm-navbar-item-margin-horizontal: 15px;
   --ifm-navbar-item-padding-vertical: 5px;
+  --ifm-global-shadow-lw: 0 1px 2px 0 #EBEAFB;
   --ifm-menu-color: #140C06;
-  --ifm-menu-color-background-active: white;
-  --ifm-menu-color-background-hover: white;
-  --ifm-breadcrumb-item-background-active: white;
+  --ifm-menu-color-background-active: #FBFCFE;
+  --ifm-menu-color-background-hover: #FBFCFE;
+  --ifm-breadcrumb-item-background-active: #FBFCFE;
 
+  --ifm-color-emphasis-300: #EBEAFB;
 
   /*--ifm-menu-color: white;*/
   --ifm-menu--active-color: #4535d8;
 }
 
-/*CSS for desktop version*/
 
+  
+
+/*CSS for desktop version
+
+.mainWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-Layout-styles-module {
+  background-color: #F8F9FC;
+}
+*/
 .navbar__link:hover {
   color: #4535d8;
 }
