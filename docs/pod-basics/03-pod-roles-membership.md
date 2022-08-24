@@ -5,10 +5,10 @@ title: Pod Roles and Membership
 ##### Defining roles and membership structures of pods.
 ---
 
-
 Two of the most important concepts of Orca Protocol are:
 
-* **Pod Roles** - the permissions that can be assigned to EOAs and pods leveraging Orca Protocol. **Admins** are the primary unique role that can be assigned to various actors within Orca Protocol.
+* **Pod Roles** - the permissions that can be assigned to EOAs and pods leveraging Orca Protocol.
+* **Admins** are the primary unique role that can be assigned to various actors within Orca Protocol.
 * **Pod Memberships** - the entities that can become members of pods and resulting relationships.
 
 ## Pod Roles
