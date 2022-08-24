@@ -94,6 +94,12 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'html',
+            className: 'launchAppNavButton',
+            value: '<a href="https://pod.xyz/" target="_blank" class="launchAppNavButton">Launch App</a>',
+            position: 'right',
+          },
         ],
       },
       footer: {

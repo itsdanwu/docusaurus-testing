@@ -69,6 +69,23 @@
 }
 
 
+/*custom CSS for launch app button on nav bar*/
+.launchAppNavButton {
+	background-color:#4635d8;
+	border-radius:20px;
+	color:#ffffff;
+	text-decoration:none;
+}
+.launchAppNavButton:hover {
+	background-color:#3223b8;
+  color:#ffffff;
+}
+.launchAppNavButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
 /*END css for Desktop version*/
 
 /*custom CSS for tablet/mobile views of menu*/
