@@ -73,8 +73,8 @@
 .launchAppNavButton {
 	background-color:#4635d8;
 	border-radius:20px;
+  padding: 5px 10px;
 	color:#ffffff;
-	text-decoration:none;
 }
 .launchAppNavButton:hover {
 	background-color:#3223b8;
