@@ -75,7 +75,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Documentation for Orca Protocol">
+      description="Documentation for Metropolis">
       <HomepageHeader />
       <main>
       <div className={styles.layoutFlexBox}>
@@ -84,9 +84,6 @@ export default function Home() {
           </div>
       </div>
           <GettingStartedCards />
-
-
- 
       </main>
     </Layout>
   );
