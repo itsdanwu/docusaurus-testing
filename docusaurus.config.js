@@ -12,9 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.svg',
-  
-
+  favicon: 'img/favicon.png',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'github.com/orcaprotocol', // Usually your GitHub org/user name.
@@ -60,7 +58,9 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    
+    {
+      metadata: [{property: 'og:image', content: './static/img/openGraphLogo.png'}],
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
@@ -68,9 +68,9 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'Welcome to Metropolis! Click to see if you <a target="_blank" rel="noopener noreferrer" href="https://airdrop-nu.vercel.app/">qualified for our airdrop </a>',
-        backgroundColor: '#fafbfc',
-        textColor: '#091E42',
+          'Welcome to Metropolis! Click to see if you <a target="_blank" rel="noopener noreferrer" href="https://pod.xyz">qualified for our airdrop!</a>',
+        backgroundColor: '#C4BFF2',
+        textColor: '#110F1F',
         isCloseable: true,
       },
       navbar: {
@@ -147,7 +147,8 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
+    }
+    
 };
 
 module.exports = config;

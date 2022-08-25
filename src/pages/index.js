@@ -78,9 +78,6 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Documentation for Metropolis">
-      <Head>
-        <meta property="og:image" content="../../static/img/openGraphLogo.png" />
-      </Head>
       <HomepageHeader />
       <main>
       <div className={styles.layoutFlexBox}>
