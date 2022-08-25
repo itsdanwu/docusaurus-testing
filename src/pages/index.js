@@ -79,7 +79,7 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Documentation for Metropolis">
       <Head>
-        <meta property="og:image" content={OpenGraphLogo} />
+        <meta property="og:image" content="../../static/img/openGraphLogo.png" />
       </Head>
       <HomepageHeader />
       <main>
