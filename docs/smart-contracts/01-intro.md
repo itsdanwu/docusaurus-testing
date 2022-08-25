@@ -22,14 +22,14 @@ Source code for all Orca Protocol contracts can be found in this [GitHub reposit
 | **Contract**            | **Address**                                |
 | ------------            | ------------------------------------------ |
 | MemberToken              | 0x0762aa185b6ed2dca77945ebe92de705e0c37ae3 |
-| ControllerV1.3            | 0xDE69E7C2184599093a9E0Bbc5923fa462fdf0302  |
+| ControllerV1.4            | 0x4C98aF741e352C6551BfF9509b3f8ca9Dd4E6397  |
 
 ### Testnet Deployments
 ##### Rinkeby - 4
 | **Contract**            | **Address**                                |
 | ------------            | ------------------------------------------ |
 | MemberToken              | 0x8DC995523c9c1C6180c50d0CE0733621E63ef8E1  |
-| ControllerV1.3             | 0x99a184725B2C12E5C8FBc1E3f680a5aDB3d07160  |
+| ControllerV1.4             | 0x0C34378834653Be07746BC568b330FbEC2E08a68  |
 
 ## Getting Started
 
