@@ -39,6 +39,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import { GettingStartedCards } from '../components/GettingStartedCards';
 import { PodarchyGuidesCards } from '../components/PodarchyGuidesCards';
@@ -76,6 +77,9 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Documentation for Metropolis">
+      <Head>
+        <meta property="og:image" content={HeroBannerLogo} />
+      </Head>
       <HomepageHeader />
       <main>
       <div className={styles.layoutFlexBox}>
