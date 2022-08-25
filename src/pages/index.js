@@ -45,6 +45,7 @@ import { GettingStartedCards } from '../components/GettingStartedCards';
 import { PodarchyGuidesCards } from '../components/PodarchyGuidesCards';
 import styles from './index.module.css';
 import HeroBannerLogo from '../../static/img/heroBannerLogo.svg'
+import OpenGraphLogo from '../../static/img/openGraphLogo.png'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -78,7 +79,7 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Documentation for Metropolis">
       <Head>
-        <meta property="og:image" content={HeroBannerLogo} />
+        <meta property="og:image" content={OpenGraphLogo} />
       </Head>
       <HomepageHeader />
       <main>
