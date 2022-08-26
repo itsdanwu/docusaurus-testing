@@ -5,7 +5,7 @@ authors: [danwu, jtlacci]
 tags: [changelog, product]
 ---
 
-![Updated Home Page](./hello-metropolis.png)
+![Hello Metropolis!](./hello-metropolis.png)
 
 # Orca Protocol is now Metropolis!
 We’re excited to share that Orca Protocol is rebranding to Metropolis and opening up our beta to a select group of DAO operators, builders, and experimenters.
@@ -31,6 +31,16 @@ From within our UI, existing signers can now easily create a Gnosis Safe transac
 DAO operators can now add and remove members from their multi-sigs directly from our new and improved pod page.
 
 With this update, operators can also batch all additions and removals that are planned for a given multi-sig - ensuring major transition events (e.g., steward elections and changeover) are conducted as efficiently as possible.
+
+## New Pod version (1.4)
+
+We released a new version of our pod controller with the following updates:
+
+- Batch mint and burn functions
+- Now using CREATE2 when creating pods, reserves the Gnosis Safe address on other networks
+- Now only pod managers can disable the Metropolis module (thereby revoking the pod manager). In addition, the pod manager can remove this restriction which allows pod members to enable additional Gnosis Safe modules.
+
+Those with existing pods can upgrade their pod to the latest version through our UI.
 
 ## Fixes and improvements
 
