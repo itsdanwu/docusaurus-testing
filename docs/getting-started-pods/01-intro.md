@@ -3,15 +3,15 @@ id: creating-pods
 title: Creating A Pod
 ---
 
-##### How to create an Orca Protocol pod.
+##### How to create a Metropolis pod.
 ---
 
 
-Creating a pod is simple and can be done through the Orca web app.
+Creating a pod is simple and can be done through the Metropolis web app.
 
-## 1. Navigate to Orca app
+## 1. Navigate to Metropolis app
 
-You can access the Orca web app at https://pod.xyz/.
+You can access the Metropolis web app at https://pod.xyz/.
 
 ## 2. Pod name and membership NFT
 Once logged in to the app, click the "Create" button on the top nav bar to enter the Create Pod flow.
@@ -33,14 +33,14 @@ See our use cases to understand what types of proposals can be created by a pod 
 
 ![Create Pod](./img/PodCreate2.png)
 
-## 5. Choose an admin
-Choose an admin for your pod. You can either choose yourself, another wallet address or not set a pod admin.
-See here for more information on pod roles admin responsibilities.
+## 5. Choose a manager
+Choose a manager for your pod. You can either choose yourself, another wallet address or not set a pod manager.
+See here for more information on pod roles manager responsibilities.
 
 ![Create Pod](./img/PodCreate3.png)
 
 ## 6. Confirm settings
-Confirm your pod name, NFT image, proposal settings, and admin/member selections before creating your pod!
+Confirm your pod name, NFT image, proposal settings, and manager/member selections before creating your pod!
 
 ![Create Pod](./img/PodCreate4.png)
 

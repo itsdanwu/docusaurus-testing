@@ -19,5 +19,5 @@ We also reduced the amount of clicks it requires to manage a specific pod - you 
 - New SDK function to create multiple pods at once
 - Buttons within our Manage flow were previously getting cut off
 - Bug where mobile footer was rendering in desktop view
-- The rejection button for subpod proposals was not displaying after the approval threshold was reached
+- The rejection button for member pod proposals was not displaying after the approval threshold was reached
 - Bug in filter for our proposal lists

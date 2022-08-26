@@ -17,7 +17,7 @@ For many transactions, approvals and rejections are collected as [gasless off-ch
 ## Viewing proposals
 All pod proposals can be viewed, approved, rejected and executed within the Metropolis UI. This includes any transaction that is initiated from outside the Metropolis UI (e.g., Snapshot vote as a pod).
 
-In addition, the Gnosis Safe UI can be used to sign and execute any pod transactions, but does not offer as intuitive support for subpod proposal approval/rejection. 
+In addition, the Gnosis Safe UI can be used to sign and execute any pod transactions, but does not offer as intuitive support for member pod proposal approval/rejection. 
 
 ## Confirmation threshold
 The confirmation threshold is the number of signatures required to execute a transaction and send it on-chain. 
@@ -26,12 +26,12 @@ The confirmation threshold is the number of signatures required to execute a tra
 
 For any Metropolis pod management related action, it's important to understand when a proposal is needed versus when a transaction can be executed directly.
 
-In general, if you are an admin EOA or admin contract (e.g., not an admin pod) you can execute any pod management activity directly without requiring a proposal.
+In general, if you are a manager EOA or manager contract (e.g., not an pod manager) you can execute any pod management activity directly without requiring a proposal.
 
 | Persona in relation to pod being managed      | Direct execution? | 
 |-----------------------------------------------|-------------------|
-| Individual user admin                         |     Yes           |
-| Contract admin (e.g., Governor Bravo)         |     Yes           |
-| Admin pod                                     |     No            |
+| Individual user manager                         |     Yes           |
+| Contract manager (e.g., Governor Bravo)         |     Yes           |
+| Manager pod                                     |     No            |
 | Regular pod member                            |     No            |
-| Subpod member                                 |     No            |
+| Member pod member                                 |     No            |
