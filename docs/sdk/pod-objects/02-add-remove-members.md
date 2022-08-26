@@ -2,7 +2,7 @@
 id: add-remove-members  
 title: Add and Remove Members
 ---
-##### How to add and remove members from a pod via the Orca SDK.
+##### How to add and remove members from a pod via the Metropolis SDK.
 
 ---
 
@@ -64,7 +64,7 @@ await adminPod.propose(await pod.mintMember(newMember, signer);
 await adminPod.propose(await pod.burnMember(memberToBurn, signer);
 ```
 
-Once the proposal is created, users can approve or reject within the Orca web app or you can build an experience to approve, reject and execute proposals through the SDK. 
+Once the proposal is created, users can approve or reject within the Metropolis web app or you can build an experience to approve, reject and execute proposals through the SDK. 
 
 
 #### Subpods
@@ -89,4 +89,4 @@ await subPod.propose(
 );
 ```
 
-Once the proposal is created, users can approve or reject within the Orca web app or you can build an experience to approve, reject and execute proposals through the SDK. 
+Once the proposal is created, users can approve or reject within the Metropolis web app or you can build an experience to approve, reject and execute proposals through the SDK. 

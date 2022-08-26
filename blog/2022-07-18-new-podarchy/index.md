@@ -12,7 +12,7 @@ Today we released some new UI updates to our [podarchy view](https://pod.xyz/pod
 
 <!--truncate-->
 
-Orca Pods make it easy to map your DAO’s architecture through our Podarchy UI. Podarchies visualize the various relationships between each group within a DAO, including membership and privileges.
+Metropolis Pods make it easy to map your DAO’s architecture through our Podarchy UI. Podarchies visualize the various relationships between each group within a DAO, including membership and privileges.
 
 Transparency is the first step towards accountability.
 

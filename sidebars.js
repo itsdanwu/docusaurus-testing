@@ -59,7 +59,7 @@
   sdk: [
     {
       type: 'category',
-      label: 'Orca SDK',
+      label: 'Metropolis SDK',
       items: [
         'sdk/sdk-overview',
         {

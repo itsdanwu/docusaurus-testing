@@ -5,17 +5,17 @@ title: Pod Roles and Membership
 ##### Defining roles and membership structures of pods.
 ---
 
-Two of the most important concepts of Orca Protocol are:
+Two of the most important concepts of Metropolis are:
 
-* **Pod Roles** - the permissions that can be assigned to EOAs and pods leveraging Orca Protocol.
-* **Admins** are the primary unique role that can be assigned to various actors within Orca Protocol.
+* **Pod Roles** - the permissions that can be assigned to EOAs and pods leveraging Metropolis.
+* **Admins** are the primary unique role that can be assigned to various actors within Metropolis.
 * **Pod Memberships** - the entities that can become members of pods and resulting relationships.
 
 ## Pod Roles
 ### Admins
 A **pod admin** is similar to a landlord in that they have executive power to change membership requirements and evict bad actors, but minimal power to control day-to-day actions. 
 
-The pod that an Orca Protocol admin governs can be referred to as an **agent pod**.  
+The pod that an Metropolis admin governs can be referred to as an **agent pod**.  
 
 To summarize: 
 

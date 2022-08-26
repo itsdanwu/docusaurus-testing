@@ -1,19 +1,19 @@
 ---
-id: orca-contracts
+id: metropolis-contracts
 title: Introduction
 ---
 
-##### An introduction to the Orca Protocol smart contracts.
+##### An introduction to the Metropolis smart contracts.
 
 ---
 
-Orca Protocol is a lightweight permissions and membership management protocol that can be connected to Gnosis Safe through the `SafeTeller.sol` safe module.
+Metropolis is a lightweight permissions and membership management protocol that can be connected to Gnosis Safe through the `SafeTeller.sol` safe module.
 
-Each membership group within Orca Protocol is referred to as a pod and pod memberships are represented by ERC1155 membership tokens.
+Each membership group within Metropolis is referred to as a pod and pod memberships are represented by ERC1155 membership tokens.
 
 ## Core Addresses
 
-Source code for all Orca Protocol contracts can be found in this [GitHub repository](https://github.com/orcaprotocol/contracts).
+Source code for all Metropolis contracts can be found in this [GitHub repository](https://github.com/orcaprotocol/contracts).
 
 
 ### Mainnet Deployments
@@ -102,9 +102,9 @@ Run `npx hardhat tenderly-verify` to verify contracts on tenderly
 
 ## Architecture
 
-The high level architecture of orca protocol is a permission wrapper around a gnosis safe that uses 1155 NFT membership to manage access.
+The high level architecture of Metropolis is a permission wrapper around a gnosis safe that uses 1155 NFT membership to manage access.
 
-A gnosis safe wrapped by orca is referred to as a pod.
+A Gnosis Safe wrapped by Metropolis is referred to as a pod.
 
 ### Member Token
 

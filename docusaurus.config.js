@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Metropolis',
   //tagline: 'The people first primitive',
-  url: 'https://docs.orcaprotocol.org',
+  url: 'https://docs.metropolis.info',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -86,7 +86,7 @@ const config = {
             label: 'Overview',
           },
           {to: '/docs/sdk/sdk-overview', label: 'SDK', position: 'left'},
-          {to: '/docs/smart-contracts/orca-contracts', label: 'Contracts', position: 'left'},
+          {to: '/docs/smart-contracts/metropolis-contracts', label: 'Contracts', position: 'left'},
           {to: '/changelog', label: 'Changelog', position: 'left'},
 /**       {to: '/docs/guides/pod-blueprints/', label:'Pod Blueprints', position: 'right'}, */ 
           {
@@ -119,11 +119,11 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discordapp.gg/orcaprotocol',
+                href: 'https://discordapp.gg/metropolis',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/orcaprotocol',
+                href: 'https://twitter.com/metropolis',
               },
             ],
           },

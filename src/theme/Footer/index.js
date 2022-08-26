@@ -8,7 +8,7 @@
  import styles from './styles.module.css'
  import QuestionsIcon from '../../../static/img/questionsIcon.svg'
  import TwitterIcon from '../../../static/img/twitterIcon.svg'
- import OrcaLogo from '../../../static/img/homepageLogo.svg'
+ import MetropolisLogo from '../../../static/img/homepageLogo.svg'
  
  function Footer() {
    return (
@@ -44,7 +44,7 @@
          </a>
        </div>
        <div className={styles.logoFlexbox}>
-         <OrcaLogo className={styles.OrcaLogo} />
+         <MetropolisLogo className={styles.MetropolisLogo} />
        </div>
      </div>
    )

@@ -2,7 +2,7 @@
 id: transfer-membership
 title: Transfer Memberhsip or Admin Keys
 ---
-##### How to transfer pod membership or admin privileges via the Orca SDK
+##### How to transfer pod membership or admin privileges via the Metropolis SDK
 
 ---
 
@@ -55,4 +55,4 @@ const agentPod = await getPod('0x123...789');
 await adminPod.propose(await agentPod.transferAdmin(toAddress), signer); 
 ```
 
-Once the proposal is created, users can approve or reject within the Orca web app or you can build an experience to approve, reject and execute proposals through the SDK.
+Once the proposal is created, users can approve or reject within the Metropolis web app or you can build an experience to approve, reject and execute proposals through the SDK.
