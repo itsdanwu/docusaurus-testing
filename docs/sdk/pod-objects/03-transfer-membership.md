@@ -1,14 +1,14 @@
 ---
 id: transfer-membership
-title: Transfer Memberhsip or Admin Keys
+title: Transfer Membership or Manager Keys
 ---
-##### How to transfer pod membership or admin privileges via the Orca SDK
+##### How to transfer pod membership or manager privileges via the Metropolis SDK
 
 ---
 
 ## Transfer pod membership
 
-Individual users and subpods can transfer their pod memberships.
+Individual users and member pods can transfer their pod memberships.
 
 An EOA can transfer their membership with the following function:
 
@@ -23,36 +23,36 @@ await pod.transferMembership(
 );
 ```
 
-If a subpod wants to transfer their membership you can call the below function. It will create a proposal that the subpod members must approve:
+If a member pod wants to transfer their membership you can call the below function. It will create a proposal that the member pod members must approve:
 
 ```js
 const subPod = await getPod('0x123...456');
 
-// The signer is a subpod member of the subpod transferring its membership
+// The signer is a member pod member of the member pod transferring its membership
 await subPod.propose(await subPod.transferMembership(fromAddress, toAddress), signer)
 ```
 
-## Transfer admin privileges
+## Transfer manager privileges
 
-Individual users admins and admins pods can transfer their admin privileges.
+Individual users managers or manager pods can transfer their manager privileges.
 
-An EOA admin can transfer their admin role with the following function:
+An EOA manager can transfer their manager role with the following function:
 
 ```js
 const pod = await getPod('0x123...456');
 
-// This signer must be an admin of a given pod
+// This signer must be a manager of a given pod
 await pod.transferAdmin(toAddress, signer);
 ```
 
-If a pod is an admin of another pod and wants to transfer their admin privileges, they must create a proposal that requires approval from said pod:
+If a pod is a manager of another pod and wants to transfer their manager privileges, they must create a proposal that requires approval from said pod:
 
 ```js
 const adminPod = await getPod('0x123...456');
 const agentPod = await getPod('0x123...789');
 
-// This signer must be a member of the admin pod
+// This signer must be a member of the manager pod
 await adminPod.propose(await agentPod.transferAdmin(toAddress), signer); 
 ```
 
-Once the proposal is created, users can approve or reject within the Orca web app or you can build an experience to approve, reject and execute proposals through the SDK.
+Once the proposal is created, users can approve or reject within the Metropolis web app or you can build an experience to approve, reject and execute proposals through the SDK.

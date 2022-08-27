@@ -23,7 +23,7 @@
       type: 'category',
       label: 'Smart Contracts',
       items: [
-          'smart-contracts/orca-contracts',
+          'smart-contracts/metropolis-contracts',
           'smart-contracts/member-token',
           'smart-contracts/controller',
           'smart-contracts/rulemanager',
@@ -52,7 +52,7 @@
   sdk: [
     {
       type: 'category',
-      label: 'Orca SDK',
+      label: 'Metropolis SDK',
       items: [
           'sdk/sdk-overview',
           'sdk/pod-objects',

@@ -24,9 +24,9 @@ await proposals[0].approve(signer);
 await proposals[0].reject(signer);
 ```
 
-### Approving and rejecting from subpods
+### Approving and rejecting from member pods
 
-Pods can also be members of other pods, referred to as subpods. Subpods can cast their decision to approve or reject a super proposal with the following:
+Pods can also be members of other pods, referred to as member pods. Member pods can cast their decision to approve or reject a super proposal with the following:
 
 ```js
   // Fetches pod object with which you want to fetch, approve or reject proposals from

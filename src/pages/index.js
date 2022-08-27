@@ -39,11 +39,13 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import { GettingStartedCards } from '../components/GettingStartedCards';
 import { PodarchyGuidesCards } from '../components/PodarchyGuidesCards';
 import styles from './index.module.css';
 import HeroBannerLogo from '../../static/img/heroBannerLogo.svg'
+import OpenGraphLogo from '../../static/img/openGraphLogo.png'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -75,7 +77,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Documentation for Metropolis">
       <HomepageHeader />
       <main>
       <div className={styles.layoutFlexBox}>
@@ -84,9 +86,6 @@ export default function Home() {
           </div>
       </div>
           <GettingStartedCards />
-
-
- 
       </main>
     </Layout>
   );

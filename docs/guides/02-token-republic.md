@@ -10,7 +10,7 @@ The token republic model gives token holders the ultimate authority over pods by
 
 Token voters can make these decisions through on-chain governance like the Governor contract or through off-chain voting through Snapshot + Gnosis multisigs.
 
-By delegating a pod’s admin key to a token holder empowered voting mechanism, DAOs can set voting and quorum criteria in order to add, remove, or modify pod configurations.
+By delegating a pod’s manager key to a token holder empowered voting mechanism, DAOs can set voting and quorum criteria in order to add, remove, or modify pod configurations.
 
 ### Use Cases
 
@@ -29,15 +29,3 @@ By delegating a pod’s admin key to a token holder empowered voting mechanism, 
 - Token holders must stay informed about workstream activity in order to intelligently manage their membership.
 - Token holder elections can turn into popularity contests with high visibility individuals being elected rather than those with the deepest knowledge.
 - Voter apathy and whales can lead to individuals and small groups of voters having undue influence over pod membership and management.
-
-### **Examples**
-
-- [ENS](https://blog.orcaprotocol.org/how-ens-dao-brought-working-groups-on-chain/)
-    
-    ENS has four separate working groups, all of which are headed by stewards that are elected by token holders.
-    
-- [TribeDAO](https://blog.orcaprotocol.org/how-tribe-dao-uses-pods-for-optimistic-governance/)
-    
-    TribeDAO uses a council model in which council members are elected by token holders.
-    
-- Synthetix

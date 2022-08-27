@@ -6,19 +6,17 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Orca Protocol',
-  //tagline: 'The people first primitive',
-  url: 'https://docs.orcaprotocol.org',
+  title: 'Metropolis',
+  tagline: 'The on-chain permissions layer for DAOs',
+  url: 'https://docs.metropolis.info',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.svg',
-  
-
+  favicon: 'img/favicon.png',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'itsdanwu.github.io', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-testing', // Usually your repo name.
+  organizationName: 'orcaprotocol', // Usually your GitHub org/user name.
+  projectName: 'orca-docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -60,14 +58,24 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    
+    {
+      image: './static/img/openGraphLogo.png',
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
       },
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'Welcome to Metropolis! Click to see if you <a target="_blank" rel="noopener noreferrer" href="https://pod.xyz">qualified for our airdrop!</a>',
+        backgroundColor: '#C4BFF2',
+        textColor: '#110F1F',
+        isCloseable: true,
+      },
       navbar: {
         logo: {
-          alt: 'Orca Logo',
+          alt: 'Metropolis Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -78,12 +86,18 @@ const config = {
             label: 'Overview',
           },
           {to: '/docs/sdk/sdk-overview', label: 'SDK', position: 'left'},
-          {to: '/docs/smart-contracts/orca-contracts', label: 'Contracts', position: 'left'},
+          {to: '/docs/smart-contracts/metropolis-contracts', label: 'Contracts', position: 'left'},
           {to: '/changelog', label: 'Changelog', position: 'left'},
 /**       {to: '/docs/guides/pod-blueprints/', label:'Pod Blueprints', position: 'right'}, */ 
           {
-            href: 'https://github.com/orcaprotocol/',
-            label: 'GitHub',
+            href: 'https://github.com/orcaprotocol',
+            className: 'pseudo-icon github-icon',
+            position: 'right',
+          },
+          {
+            type: 'html',
+            className: 'launchAppNavButton',
+            value: '<a href="https://pod.xyz/" target="_blank" class="launchAppNavButton">Launch App</a>',
             position: 'right',
           },
         ],
@@ -105,11 +119,11 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discordapp.gg/orcaprotocol',
+                href: 'https://discordapp.gg/metropolis',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/orcaprotocol',
+                href: 'https://twitter.com/metropolis',
               },
             ],
           },
@@ -133,7 +147,8 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
+    }
+    
 };
 
 module.exports = config;

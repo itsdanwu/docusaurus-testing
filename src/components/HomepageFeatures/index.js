@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/orca-bubbles.svg').default,
     description: (
       <>
-        Orca Protocol
+        Metropolis
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/orca-bubbles.svg').default,
     description: (
       <>
-        Orca Protocol
+        Metropolis
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/orca-bubbles.svg').default,
     description: (
       <>
-        Orca Protocol
+        Metropolis
       </>
     ),
   },

@@ -7,7 +7,7 @@ sidebar_position: 1
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-##### Fetch pod object data, manage memberships and admin roles through the Orca SDK.
+##### Fetch pod object data, manage memberships and manager roles through the Metropolis SDK.
 
 ---
 
@@ -47,7 +47,7 @@ const notAPod = await getPod('not a pod');
 // Fetches all Pods that a user is a member of
 const userPods = await getUserPods(userAddress);
 
-// Fetches all Pods that a user is an admin of
+// Fetches all Pods that a user is a manager of
 const adminPods = await getAdminPods(adminAddress);
 ```
 
@@ -58,8 +58,8 @@ const adminPods = await getAdminPods(adminAddress);
 const {
   id, // Pod ID
   safe, // Gnosis safe address, aka the Pod address
-  ensName, // E.g., orcanauts.pod.xyz
-  admin, // Address of pod admin
+  ensName, // E.g., metronauts.pod.xyz
+  admin, // Address of pod manager
   imageUrl, // Source of NFT image
   imageNoTextUrl, // Source of NFT image without text (used for avatars)
 } = await getPod();
@@ -68,27 +68,27 @@ const {
 </Tabs>
 
 ### Check roles and memberships
-For a given pod, you can check if a certain given user is an admin, admin pod member, or subpod member.
+For a given pod, you can check if a certain given user is a manager, manager pod member, or member pod.
 
 ```js
 const pod = await getPod(podAddress);
 
-// Checks if user is admin of pod
+// Checks if user is manager of pod
 const isAdminBoolean = await pod.isAdmin('0x123...456');
 
-// Checks if user is member of an admin pod (if exists) for a given pod
+// Checks if user is member of a manager pod (if exists) for a given pod
 const isAdminPodMemberBoolean = await pod.isAdminPodMember('0x123...456');
 
 // Checks if user is member of pod
 const isMemberBoolean = await pod.isMember('0x123...456');
 
-// Checks if user is a member of a subpod. Returns false if the user is a member of this pod, but not any subpods.
+// Checks if user is a member of a member pod. Returns false if the user is a member of this pod, but not any member pods.
 const isSubPodMemberBoolean = await pod.isSubPodMember('0x123...456');
 ```
 
-### Fetching members, EOAs, subpods and super pods
+### Fetching members, EOAs, member pods and parent pods
 
-Once you have a given pod, you can fetch members, EOAs, subpods and superpods with the following functions:
+Once you have a given pod, you can fetch members, EOAs, member pods and parent pods with the following functions:
 
 
 ```js
@@ -106,6 +106,6 @@ const memberPods = await pod.getMemberPods();
 // For a given pod, fetches all sub pods a given user is a part of
 const subPodsOfMember = await pod.getSubPodsByMember(userAddress);
 
-// Fetch the super pod of a given pod, if relevant. 
+// Fetch the parent pod of a given pod, if relevant. 
 const superPods = await pod.getSuperPods();
 ```

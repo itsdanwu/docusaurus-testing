@@ -16,10 +16,10 @@
   
   .footer {
     z-index: 1;
-    background: #7c1cfc;
+    background: white;
     width: 100%;
     height: 100%;
-    border-top: 1px solid #4d4d4d;
+    border-top: 1px solid #EBEAFB;
     padding-left: 30px;
     padding-top: 18px;
     padding-bottom: 16px;
@@ -34,27 +34,27 @@
   }
   
   .footerTitle {
-    font-family: 'Poppins';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 200;
     font-size: 15px;
     line-height: 25px;
-    color: #f2f2f2;
+    color: #140C06;
     margin: 0;
   }
   
   .footerParagraph {
-    font-family: 'Poppins';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 2;
     font-size: 15px;
     line-height: 25px;
-    color: #b3b3b3;
+    color: #140C06;
     margin: 0;
     transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
   }
   
-  .OrcaLogo {
+  .MetropolisLogo {
     width: 188px;
     height: 86px;
   }
@@ -74,7 +74,7 @@
   }
   
   .textFlexbox:hover .footerParagraph {
-    color: white;
+    color: #4535d8;
   }
   
   .footerLinksFlexbox {
