@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Metropolis',
-  //tagline: 'The people first primitive',
+  tagline: 'The on-chain permissions layer for DAOs',
   url: 'https://docs.metropolis.info',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.png',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'github.com/orcaprotocol', // Usually your GitHub org/user name.
+  organizationName: 'orcaprotocol', // Usually your GitHub org/user name.
   projectName: 'orca-docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -60,7 +60,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     
     {
-      metadata: [{property: 'og:image', content: './static/img/openGraphLogo.png'}],
+      image: './static/img/openGraphLogo.png',
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
@@ -90,8 +90,8 @@ const config = {
           {to: '/changelog', label: 'Changelog', position: 'left'},
 /**       {to: '/docs/guides/pod-blueprints/', label:'Pod Blueprints', position: 'right'}, */ 
           {
-            href: 'https://github.com/orcaprotocol/',
-            label: 'GitHub',
+            href: 'https://github.com/orcaprotocol',
+            className: 'pseudo-icon github-icon',
             position: 'right',
           },
           {
