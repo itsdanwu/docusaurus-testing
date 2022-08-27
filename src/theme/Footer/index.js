@@ -16,7 +16,7 @@
        <div className={styles.footerLinksFlexbox}>
          <a
            className={styles.textFlexbox}
-           href="https://discord.gg/orcaprotocol"
+           href="https://discord.gg/metropolis"
            target="_blank"
            rel="noopener noreferrer"
          >
@@ -29,7 +29,7 @@
            </p>
          </a>
          <a
-           href="https://twitter.com/orcaprotocol"
+           href="https://twitter.com/metropolis"
            target="_blank"
            rel="noopener noreferrer"
            className={styles.textFlexbox}
